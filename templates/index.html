@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Camera Demo</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function openCamera() {
+            var video = document.getElementById('video');
+            if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+                navigator.mediaDevices.getUserMedia({ video: true })
+                    .then(function(stream) {
+                        video.srcObject = stream;
+                        video.play();
+                    })
+                    .catch(function(error) {
+                        console.log('Error accessing camera:', error);
+                    });
+            }
+        }
+    </script>
+    <style>
+        #video {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Camera Demo</h1>
+    <button onclick="openCamera()">Ouvrir</button>
+    <br>
+    <video id="video" autoplay></video>
+</body>
+</html>
+
+
