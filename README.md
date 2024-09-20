@@ -1,2 +1,2 @@
 # healthcare-project
-eye gaze tracking and analysis to be human :YOLOV8 · Réseaux de neurones convolutifs · Bases de données · Healthcare · Deep learning · Flask · Vision par ordinateur · Détection d’objets · architetecture yolo · Annotation de données
+Eye gaze tracking and analysis to be human: YOLOV8 · Convolutional Neural Networks · Databases · Healthcare · Deep learning · Flask · Computer Vision · Object Detection · YOLO architecture · Data annotation
